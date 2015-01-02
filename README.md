@@ -21,3 +21,13 @@ Add File:
 Fixes:
 * Some misspellings
 
+## 0.2.3
+Add localization for 'de_DE' and 'es_ES'.
+
+Add File:
+* locale/de_DE/Uni_Fileuploader.csv
+* locale/en_US/Uni_Fileuploader.csv
+* locale/es_ES/Uni_Fileuploader.csv
+
+Fixes:
+* Fix some code stuff for localization.
