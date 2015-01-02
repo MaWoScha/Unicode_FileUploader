@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Uni_Common>
+            <version>0.1.1</version>
+        </Uni_Common>
+    </modules>
+    <global>
+        <helpers>
+            <unicommon>
+                <class>Uni_Common_Helper</class>
+            </unicommon>
+        </helpers>
+    </global>
+    <default>
+        <unicommon>
+            <general>
+                <license_uri><![CDATA[YUhSMGNEb3ZMM04wYjNKbExuVnVhV052WkdWemVYTjBaVzF6TG1sdUwyMXZaSFZzWldSbGRHRnBiSE09]]></license_uri>
+            </general>
+        </unicommon>
+    </default>
+</config>

@@ -1,0 +1,38 @@
+<!--
+/**
+ * Unicode Systems
+ * @category   Uni
+ * @package    Uni_Fileuploader
+ * @copyright  Copyright (c) 2010-2011 Unicode Systems. (http://www.unicodesystems.in)
+ * @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+ -->
+<style type="text/css">
+    div.attachment-specs td.label a.prod-attach{text-decoration: none; cursor: pointer;}
+    div.attachment-specs td.label span.attach-img{float: left;}
+    div.attachment-specs td.label span.attach-title{float: left; text-decoration: underline;}
+</style>
+<?php
+$_product = Mage::registry('current_product');
+$attachments = $this->getProductAttachments($_product->getId());
+if (count($attachments) > 0):
+?>
+    <div class="collateral-box">
+        <div class="head">
+            <h4><?php echo $this->__('Product Attachments') ?></h4>
+        </div>
+        <div class="collateral-box attachment-specs">
+            <table cellspacing="0" id="product-attachment-specs-table" class="data-table">
+                <tbody>
+                <?php foreach ($attachments as $attachment): ?>
+                    <tr>
+                        <td class="label"><?php echo $attachment['file']; ?></td>
+                        <td class="data"><?php echo $attachment['content']; ?></td>
+                    </tr>
+                <?php endforeach; ?>
+                </tbody>
+            </table>
+            <script type="text/javascript">decorateTable('product-attachment-specs-table')</script>
+        </div>
+    </div>    
+<?php endif; ?>

@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Unicode Systems
+* @category   Uni
+* @package    Uni_Fileuploader
+* @copyright  Copyright (c) 2010-2011 Unicode Systems. (http://www.unicodesystems.in)
+* @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*/
+-->
+<config>
+    <modules>
+        <Uni_Fileuploader>
+            <version>0.2.1</version>
+        </Uni_Fileuploader>
+    </modules>
+    <frontend>
+        <routers>
+            <fileuploader>
+                <use>standard</use>
+                <args>
+                    <module>Uni_Fileuploader</module>
+                    <frontName>fileuploader</frontName>
+                </args>
+            </fileuploader>
+        </routers>
+        <layout>
+            <updates>
+                <fileuploader>
+                    <file>fileuploader.xml</file>
+                </fileuploader>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <Uni_Fileuploader>
+                    <files>
+                        <default>Uni_Fileuploader.csv</default>
+                    </files>
+                </Uni_Fileuploader>
+            </modules>
+        </translate>
+    </frontend>
+    <admin>
+        <routers>
+            <fileuploader>
+                <use>admin</use>
+                <args>
+                    <module>Uni_Fileuploader</module>
+                    <frontName>fileuploader</frontName>
+                </args>
+            </fileuploader>
+        </routers>
+    </admin>
+    <adminhtml>
+        <menu>
+            <catalog>
+                <children>
+                    <fileuploader>
+                        <title>Manage Attachments</title>
+                        <sort_order>1</sort_order>
+                        <action>fileuploader/adminhtml_fileuploader</action>
+                    </fileuploader>
+                </children>
+            </catalog>
+        </menu>
+        <acl>
+            <resources>
+                <all>
+                    <title>Allow Everything</title>
+                </all>
+                <admin>
+                    <children>
+                       <catalog>
+                            <children>
+                                <fileuploader>
+                                    <title>Manage Attachments</title>
+                                    <sort_order>10</sort_order>
+                                </fileuploader>
+                            </children>
+                        </catalog>
+                         <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <fileuploader translate="title" module="fileuploader">
+                                            <title>File Uploader</title>
+                                            <sort_order>60</sort_order>
+                                        </fileuploader>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                        <fileuploader>
+                            <title>Fileuploader Module</title>
+                            <sort_order>10</sort_order>
+                        </fileuploader>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+        <layout>
+            <updates>
+                <fileuploader>
+                    <file>fileuploader.xml</file>
+                </fileuploader>
+            </updates>
+        </layout>
+        <events>
+            <core_block_abstract_prepare_layout_after>
+                <observers>
+                    <fileuploader_product_injectTabs>
+                        <type>singleton</type>
+                        <class>fileuploader/observer_product</class>
+                        <method>injectTabs</method>
+                    </fileuploader_product_injectTabs>
+                </observers>
+            </core_block_abstract_prepare_layout_after>
+        </events>
+    </adminhtml>
+    <global>
+        <blocks>
+            <fileuploader>
+                <class>Uni_Fileuploader_Block</class>
+            </fileuploader>            
+        </blocks>
+        <helpers>
+            <fileuploader>
+                <class>Uni_Fileuploader_Helper</class>
+            </fileuploader>
+        </helpers>
+        <models>
+            <fileuploader>
+                <class>Uni_Fileuploader_Model</class>
+                <resourceModel>fileuploader_mysql4</resourceModel>
+            </fileuploader>
+            <fileuploader_mysql4>
+                <class>Uni_Fileuploader_Model_Mysql4</class>
+                <entities>
+                    <fileuploader>
+                        <table>uni_fileuploader</table>
+                    </fileuploader>
+                </entities>
+            </fileuploader_mysql4>
+        </models>
+        <resources>
+            <fileuploader_setup>
+                <setup>
+                    <module>Uni_Fileuploader</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </fileuploader_setup>
+            <fileuploader_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </fileuploader_write>
+            <fileuploader_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </fileuploader_read>
+        </resources>
+    </global>    
+</config>

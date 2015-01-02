@@ -1,0 +1,62 @@
+<!--
+/**
+ * Unicode Systems
+ * @category   Uni
+ * @package    Uni_Fileuploader
+ * @copyright  Copyright (c) 2010-2011 Unicode Systems. (http://www.unicodesystems.in)
+ * @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+-->
+<?php /*if( !$this->isSingleStoreMode() ): ?>
+<?php echo $this->getChildHtml('store_switcher');?>
+<?php endif;*/?>
+<?php echo $this->getTabsHtml() ?>
+<script type="text/javascript">
+    //<![CDATA[
+    function load_product_funcs(){
+<?php if (($block = $this->getLayout()->getBlock('fileuploader.grid.products')) && ($_gridJsObject = $block->getJsObjectName())): ?>
+            if(!$('in_fileuploader_products')){
+                setTimeout('load_product_funcs()',500);
+                return false;
+            }
+            var selectedProducts=$H(<?php echo $this->getProductsJson(); ?>);
+            $('in_fileuploader_products').value = selectedProducts.toQueryString();
+            
+            function registerSelectedProduct(grid, element, checked){
+                if(checked){
+                    selectedProducts.set(element.value, element.value);
+                }
+                else{
+                    selectedProducts.unset(element.value);
+                }
+                $('in_fileuploader_products').value = selectedProducts.toQueryString();
+                grid.reloadParams = {'selected_products[]':selectedProducts.keys()};
+            }    
+            function selectedProductRowClick(grid, event){
+                var trElement = Event.findElement(event, 'tr');
+                var isInput   = Event.element(event).tagName == 'INPUT';
+                if(trElement){
+                    var checkbox = Element.getElementsBySelector(trElement, 'input');
+                    if(checkbox[0]){
+                        var checked = isInput ? checkbox[0].checked : !checkbox[0].checked;
+<?php echo $_gridJsObject ?>.setCheckboxChecked(checkbox[0], checked);
+                    }
+                }
+            }
+
+            var tabIndex = 1000;
+            function selectedProductRowInit(grid, row){
+                var checkbox = $(row).getElementsByClassName('checkbox')[0];
+            }
+
+
+<?php echo $_gridJsObject ?>.rowClickCallback 		= selectedProductRowClick;
+<?php echo $_gridJsObject ?>.initRowCallback 		= selectedProductRowInit;
+<?php echo $_gridJsObject ?>.checkboxCheckCallback	= registerSelectedProduct;
+<?php echo $_gridJsObject ?>.rows.each(function(row){selectedProductRowInit(<?php echo $_gridJsObject ?>, row)});
+
+<?php endif; ?>
+    }
+    load_product_funcs();
+    //]]>
+</script>

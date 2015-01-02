@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <unicode_extensions translate="label">
+            <label>Unicode Systems Extensions</label>
+            <sort_order>220</sort_order>      
+        </unicode_extensions>
+    </tabs>
+</config>

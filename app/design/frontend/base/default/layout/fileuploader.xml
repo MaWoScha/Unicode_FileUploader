@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Unicode Systems
+ * @category   Uni
+ * @package    Uni_Fileuploader
+ * @copyright  Copyright (c) 2010-2011 Unicode Systems. (http://www.unicodesystems.in)
+ * @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+ -->
+<layout version="0.1.0">
+    <catalog_product_view>
+        <reference name="head">
+            <action method="addJs">
+                <script>fileuploader/filepop.js</script>
+            </action>
+        </reference>
+        <reference name="content">            
+            <reference name="product.description">
+                <action method="setTemplate"><template>fileuploader/fileuploader.phtml</template></action>
+		<block type="fileuploader/fileuploader" name="product.attachments" template="fileuploader/desc_attachments.phtml"/>
+            </reference>
+        </reference>
+    </catalog_product_view>
+</layout>

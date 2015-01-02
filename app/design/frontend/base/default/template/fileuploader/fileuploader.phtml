@@ -1,0 +1,34 @@
+<!--
+/**
+ * Unicode Systems
+ * @category   Uni
+ * @package    Uni_Fileuploader
+ * @copyright  Copyright (c) 2010-2011 Unicode Systems. (http://www.unicodesystems.in)
+ * @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+ -->
+<?php 
+$version = substr(Mage::getVersion(), 0, 3);
+$_description = $this->getProduct()->getDescription();
+if($version=='1.3'): ?>
+<div class="product-specs">
+    <?php echo $this->helper('catalog/output')->productAttribute($this->getProduct(), nl2br($_description), 'description') ?>
+</div>
+<?php elseif($version=='1.4'): ?>
+<?php if ($_description): ?>
+<div class="box-collateral box-description">
+    <h2><?php echo $this->__('Product Description') ?></h2>
+    <div class="std">
+        <?php echo $this->helper('catalog/output')->productAttribute($this->getProduct(), nl2br($_description), 'description') ?>
+    </div>
+</div>
+<?php endif;?>
+<?php elseif($version=='1.5'):?>
+<?php if ($_description):?>
+    <h2><?php echo $this->__('Details') ?></h2>
+    <div class="std">
+        <?php echo $this->helper('catalog/output')->productAttribute($this->getProduct(), $_description, 'description') ?>
+    </div>
+<?php endif; ?>
+<?php endif; ?>
+<?php echo $this->getChildHtml('product.attachments'); ?>
