@@ -61,8 +61,8 @@ class Uni_Fileuploader_Block_Adminhtml_Fileuploader_Edit_Tab_Productfile extends
             'index' => 'content_disp',
             'type' => 'options',
             'options' => array(
-                0 => 'Attachment',
-                1 => 'Inline',
+                0 => Mage::helper('fileuploader')->__('Attachment'),
+                1 => Mage::helper('fileuploader')->__('Inline'),
             ),
         ));
 
@@ -80,8 +80,8 @@ class Uni_Fileuploader_Block_Adminhtml_Fileuploader_Edit_Tab_Productfile extends
             'index' => 'file_status',
             'type' => 'options',
             'options' => array(
-                1 => 'Enabled',
-                2 => 'Disabled',
+                1 => Mage::helper('fileuploader')->__('Enabled'),
+                2 => Mage::helper('fileuploader')->__('Disabled'),
             ),
         ));
         $this->addColumn('action',
@@ -108,7 +108,7 @@ class Uni_Fileuploader_Block_Adminhtml_Fileuploader_Edit_Tab_Productfile extends
     public function getGridUrl() {
         return $this->getUrl('fileuploader/adminhtml_fileuploader/filegrid', array('_current' => true));
     }
-    public function getRowUrl() {
+    public function getRowUrl($item) {
         return '#';
     }
 

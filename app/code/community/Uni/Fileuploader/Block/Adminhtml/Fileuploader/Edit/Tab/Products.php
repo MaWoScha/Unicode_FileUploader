@@ -133,7 +133,7 @@ class Uni_Fileuploader_Block_Adminhtml_Fileuploader_Edit_Tab_Products extends Ma
 
         $this->addColumn('set_name',
                 array(
-                    'header' => Mage::helper('fileuploader')->__('Attrib. Set Name'),
+                    'header' => Mage::helper('fileuploader')->__('Attribute Set Name'),
                     'width' => '100px',
                     'index' => 'attribute_set_id',
                     'type' => 'options',
@@ -218,7 +218,7 @@ class Uni_Fileuploader_Block_Adminhtml_Fileuploader_Edit_Tab_Products extends Ma
         return parent::_prepareColumns();
     }
 
-    public function getRowUrl() {
+    public function getRowUrl($item) {
         return '#';
     }
 

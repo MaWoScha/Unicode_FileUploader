@@ -11,7 +11,7 @@
 <config>
     <modules>
         <Uni_Fileuploader>
-            <version>0.2.2</version>
+            <version>0.2.3</version>
         </Uni_Fileuploader>
     </modules>
     <frontend>
@@ -64,6 +64,16 @@
                 </children>
             </catalog>
         </menu>
+        <translate>
+            <modules>
+                <Uni_Fileuploader>
+                    <files>
+                        <fileuploader>Uni_Fileuploader.csv</fileuploader>
+                        <default>Mage_Adminhtml.csv</default>
+                    </files>
+                </Uni_Fileuploader>
+            </modules>
+        </translate>
         <acl>
             <resources>
                 <all>
