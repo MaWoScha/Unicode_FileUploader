@@ -55,7 +55,7 @@ class Uni_Fileuploader_Block_Adminhtml_Fileuploader_Edit_Tab_Productfile extends
         ));
 
         $this->addColumn('content_disp', array(
-            'header' => Mage::helper('fileuploader')->__('Content-Disposiotion'),
+            'header' => Mage::helper('fileuploader')->__('Content-Disposition'),
             'align' => 'left',
             'width' => '80px',
             'index' => 'content_disp',

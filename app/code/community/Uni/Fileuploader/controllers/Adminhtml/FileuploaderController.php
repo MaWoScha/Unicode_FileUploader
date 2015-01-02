@@ -11,7 +11,7 @@ class Uni_Fileuploader_Adminhtml_FileuploaderController extends Mage_Adminhtml_C
     protected function _initAction() {
         $this->loadLayout()
                 ->_setActiveMenu('catalog/items')
-                ->_addBreadcrumb(Mage::helper('fileuploader')->__('Items Manager'), Mage::helper('fileuploader')->__('Item Manager'));
+                ->_addBreadcrumb(Mage::helper('fileuploader')->__('Item Manager'), Mage::helper('fileuploader')->__('Item Manager'));
         $id = $this->getRequest()->getParam('id');
         $model = Mage::getModel('fileuploader/fileuploader')->load($id);
         if ($model->getId() || $id == 0) {
