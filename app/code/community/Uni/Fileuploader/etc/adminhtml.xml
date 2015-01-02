@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Unicode Systems
+* @category   Uni
+* @package    Uni_Fileuploader
+* @copyright  Copyright (c) 2010-2011 Unicode Systems. (http://www.unicodesystems.in)
+* @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*/
+-->
+<config>
+	<menu>
+		<catalog>
+			<children>
+				<fileuploader module="fileuploader">
+					<title>Manage Attachments</title>
+					<sort_order>1</sort_order>
+					<action>fileuploader/adminhtml_fileuploader</action>
+				</fileuploader>
+			</children>
+		</catalog>
+	</menu>
+	<acl>
+		<resources>
+			<all>
+				<title>Allow Everything</title>
+			</all>
+			<admin>
+				<children>
+					<catalog>
+						<children>
+							<fileuploader module="fileuploader">
+								<title>Manage Attachments</title>
+								<sort_order>1</sort_order>
+								<action>fileuploader/adminhtml_fileuploader</action>
+							</fileuploader>
+						</children>
+					</catalog>
+				</children>
+			</admin>
+		</resources>
+	</acl>
+	<layout>
+		<updates>
+			<fileuploader>
+				<file>fileuploader.xml</file>
+			</fileuploader>
+		</updates>
+	</layout>
+	<events>
+		<core_block_abstract_prepare_layout_after>
+			<observers>
+				<fileuploader_product_injectTabs>
+					<type>singleton</type>
+					<class>fileuploader/observer_product</class>
+					<method>injectTabs</method>
+				</fileuploader_product_injectTabs>
+			</observers>
+		</core_block_abstract_prepare_layout_after>
+	</events>
+</config>

@@ -9,4 +9,5 @@ Product Attachments extension provides uploading of multiple audio (QuickTime), 
 The "original" Version is found here:
 * http://www.magentocommerce.com/magento-connect/product-attachments-extension.html
 * http://store.unicodesystems.in/extensions/product-attachments-extension.html
+
 It is designed to be used in Magento Version 1.3-1.7
