@@ -11,3 +11,13 @@ The "original" Version is found here:
 * http://store.unicodesystems.in/extensions/product-attachments-extension.html
 
 It is designed to be used in Magento Version 1.3-1.7
+
+## 0.2.2
+Compatibility for Magento Version 1.9
+
+Add File:
+* etc/adminhtml.xml
+
+Fixes:
+* Some misspellings
+
