@@ -31,3 +31,14 @@ Add File:
 
 Fixes:
 * Fix some code stuff for localization.
+
+## 0.2.4
+Add localization for 'fr_FR' and 'pt_PT'.
+
+Add File:
+* locale/fr_FR/Uni_Fileuploader.csv
+* locale/pt_PT/Uni_Fileuploader.csv
+
+Fixes:
+* locale/de_DE/Uni_Fileuploader.csv
+* locale/es_ES/Uni_Fileuploader.csv
