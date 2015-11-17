@@ -15,7 +15,7 @@
 				<fileuploader module="fileuploader">
 					<title>Manage Attachments</title>
 					<sort_order>1</sort_order>
-					<action>fileuploader/adminhtml_fileuploader</action>
+					<action>adminhtml/fileuploader</action>
 				</fileuploader>
 			</children>
 		</catalog>
@@ -32,7 +32,7 @@
 							<fileuploader module="fileuploader">
 								<title>Manage Attachments</title>
 								<sort_order>1</sort_order>
-								<action>fileuploader/adminhtml_fileuploader</action>
+								<action>adminhtml/fileuploader</action>
 							</fileuploader>
 						</children>
 					</catalog>
