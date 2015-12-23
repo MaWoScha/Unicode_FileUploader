@@ -14,12 +14,12 @@
             <action method="addJs"><script>fileuploader/filepop.js</script></action>
         </reference>
     </default>
-    <fileuploader_adminhtml_fileuploader_index>
+    <adminhtml_fileuploader_index>
         <reference name="content">
             <block type="fileuploader/adminhtml_fileuploader" name="fileuploader" />
         </reference>
-    </fileuploader_adminhtml_fileuploader_index>    
-    <fileuploader_adminhtml_fileuploader_edit>
+    </adminhtml_fileuploader_index>    
+    <adminhtml_fileuploader_edit>
         <update handle="editor"/>
-    </fileuploader_adminhtml_fileuploader_edit>
+    </adminhtml_fileuploader_edit>
 </layout>

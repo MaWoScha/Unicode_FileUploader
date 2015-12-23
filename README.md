@@ -42,3 +42,6 @@ Add File:
 Fixes:
 * locale/de_DE/Uni_Fileuploader.csv
 * locale/es_ES/Uni_Fileuploader.csv
+
+## 0.2.5
+Updated Admin Routing to make this module compatible with Patch SUPEE-6788 (MatthijsIJ)

@@ -11,7 +11,7 @@
 <config>
     <modules>
         <Uni_Fileuploader>
-            <version>0.2.4</version>
+            <version>0.2.5</version>
         </Uni_Fileuploader>
     </modules>
     <frontend>
@@ -43,13 +43,13 @@
     </frontend>
     <admin>
         <routers>
-            <fileuploader>
-                <use>admin</use>
+            <adminhtml>
                 <args>
-                    <module>Uni_Fileuploader</module>
-                    <frontName>fileuploader</frontName>
+                    <modules>
+                        <Uni_Fileuploader after="Mage_Adminhtml">Uni_Fileuploader_Adminhtml</Uni_Fileuploader>
+                    </modules>
                 </args>
-            </fileuploader>
+            </adminhtml>
         </routers>
     </admin>
     <adminhtml>
@@ -59,7 +59,7 @@
                     <fileuploader>
                         <title>Manage Attachments</title>
                         <sort_order>1</sort_order>
-                        <action>fileuploader/adminhtml_fileuploader</action>
+                        <action>adminhtml/fileuploader</action>
                     </fileuploader>
                 </children>
             </catalog>
