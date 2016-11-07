@@ -47,4 +47,7 @@ Fixes:
 Updated Admin Routing to make this module compatible with Patch SUPEE-6788 (MatthijsIJ)
 
 ## 0.2.6
-Add function "_isAllowed()" to "app/code/community/Uni/Fileuploader/controllers/Adminhtml/FileuploaderController.php"
+Add function "_isAllowed()" to "app/code/community/Uni/Fileuploader/controllers/Adminhtml/FileuploaderController.php" (Thanks to EliasKotlyar)
+
+## 0.2.7
+Enhance Template (Thanks to sickdaflip)

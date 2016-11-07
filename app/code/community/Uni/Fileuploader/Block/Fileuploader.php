@@ -23,7 +23,9 @@ class Uni_Fileuploader_Block_Fileuploader extends Mage_Core_Block_Template {
             foreach ($record as $rec) {
                 $i++;
                 $file = $_helper->getFilesHtml($rec['uploaded_file'], $rec['title'],$i,true,$rec['content_disp'],true);
-                $attach[] = array('title' => $rec['title'], 'file' => $file, 'content' => $rec['file_content']);
+                $size = $_helper->getFilesSize($rec['uploaded_file']);
+                $typ  = $_helper->getFilesTyp($rec['uploaded_file']);
+                $attach[] = array('name' => $rec['title'], 'desc' => $rec['file_content'], 'typ'  => $typ, 'size'  => $size, 'link' => $file);
             }
         }
         return $attach;
