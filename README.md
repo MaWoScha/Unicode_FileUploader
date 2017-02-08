@@ -44,10 +44,13 @@ Fixes:
 * locale/es_ES/Uni_Fileuploader.csv
 
 ## 0.2.5
-Updated Admin Routing to make this module compatible with Patch SUPEE-6788 (MatthijsIJ)
+Updated Admin Routing to make this module compatible with Patch SUPEE-6788 (Thanks to [MatthijsIJ](https://github.com/MatthijsIJ))
 
 ## 0.2.6
-Add function "_isAllowed()" to "app/code/community/Uni/Fileuploader/controllers/Adminhtml/FileuploaderController.php" (Thanks to EliasKotlyar)
+Add function "_isAllowed()" to "app/code/community/Uni/Fileuploader/controllers/Adminhtml/FileuploaderController.php" (Thanks to [EliasKotlyar](https://github.com/EliasKotlyar))
 
 ## 0.2.7
-Enhance Template (Thanks to sickdaflip)
+Enhance Template (Thanks to [sickdaflip](https://github.com/sickdaflip))
+
+## 0.2.7.1
+"modman" and "composer.json" stuff (Thanks to [ConstantinCiot](https://github.com/ConstantinCiot) and [Altex-Romania](https://github.com/Altex-Romania))
