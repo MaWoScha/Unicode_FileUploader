@@ -1,34 +1,21 @@
 {
-  "name": "mawoscha/unicode-fileuploader",
-  "type": "magento-module",
-  "license": "",
-  "description": "",
-  "authors":[
-    {
-        "name":"Unicode Systems"
+    "name": "uni/fileuploader",
+    "type": "magento-module",
+    "license": "",
+    "description": "",
+    "authors":[
+        {
+            "name":"Unicode Systems"
+        },
+        {
+            "name":"MaWoScha"
+        }
+    ],
+    "homepage": "http://www.magentocommerce.com/magento-connect/product-attachments-extension.html",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
     },
-    {
-        "name":"MaWoScha"
+    "extra": {
+        "magento-force": "override"
     }
-  ],
-  "homepage": "http://www.magentocommerce.com/magento-connect/product-attachments-extension.html",
-  "require": {
-    "magento-hackathon/magento-composer-installer": "*"
-  },
-  "extra": {
-    "magento-force": "override",
-    "map": [
-      ["app/design/adminhtml/default/default/layout/*", "app/design/adminhtml/default/default/layout/"],
-      ["app/design/adminhtml/default/default/template/*", "app/design/adminhtml/default/default/template/"],
-      ["app/design/frontend/base/default/layout/*", "app/design/frontend/base/default/layout/"],
-      ["app/design/frontend/base/default/template/*", "app/design/frontend/base/default/template/"],
-      ["app/code/community/Uni/Common/*", "app/code/community/Uni/Common/"],
-      ["app/code/community/Uni/Fileuploader/*", "app/code/community/Uni/Fileuploader/"],
-      ["app/etc/modules/*", "app/etc/modules/"],
-      ["js/fileuploader/*", "js/fileuploader/"],
-      ["lib/Varien/Data/Form/Element/*", "lib/Varien/Data/Form/Element/"],
-      ["media/custom/upload/icons/*", "media/custom/upload/icons/"],
-      ["media/custom/upload/player/*", "media/custom/upload/player/"]
-    ]
-  }
 }
