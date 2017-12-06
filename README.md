@@ -33,36 +33,36 @@ See also changelog in [Release Notes tab](https://github.com/MaWoScha/Unicode_Fi
 * Add localization for 'fr_FR' and 'pt_PT'.
 
 * Add File:
-** locale/fr_FR/Uni_Fileuploader.csv
-** locale/pt_PT/Uni_Fileuploader.csv
+* - locale/fr_FR/Uni_Fileuploader.csv
+* - locale/pt_PT/Uni_Fileuploader.csv
 
 * Fixes:
-** locale/de_DE/Uni_Fileuploader.csv
-** locale/es_ES/Uni_Fileuploader.csv
+* - locale/de_DE/Uni_Fileuploader.csv
+* - locale/es_ES/Uni_Fileuploader.csv
 
 0.2.3
 * Add localization for 'de_DE' and 'es_ES'.
 
 * Add File:
-** locale/de_DE/Uni_Fileuploader.csv
-** locale/en_US/Uni_Fileuploader.csv
-** locale/es_ES/Uni_Fileuploader.csv
+* - locale/de_DE/Uni_Fileuploader.csv
+* - locale/en_US/Uni_Fileuploader.csv
+* - locale/es_ES/Uni_Fileuploader.csv
 
 * Fixes:
-** Fix some code stuff for localization.
+* - Fix some code stuff for localization.
 
 0.2.2
 * Compatibility for Magento Version 1.9
 
 * Add File:
-** etc/adminhtml.xml
+* - etc/adminhtml.xml
 
 * Fixes:
-** Some misspellings
+* - Some misspellings
 
 0.2.1
 * The "original" Version is found here:
-** http://www.magentocommerce.com/magento-connect/product-attachments-extension.html
-** http://store.unicodesystems.in/extensions/product-attachments-extension.html
+* - http://www.magentocommerce.com/magento-connect/product-attachments-extension.html
+* - http://store.unicodesystems.in/extensions/product-attachments-extension.html
 
 It was initially designed to be used in Magento Version 1.3-1.7
