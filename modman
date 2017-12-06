@@ -1,9 +1,9 @@
 app/design/adminhtml/default/default/layout/fileuploader.xml app/design/adminhtml/default/default/layout/fileuploader.xml
-app/design/adminhtml/default/default/template/fileuploader/ app/design/adminhtml/default/default/template/fileuploader/
+app/design/adminhtml/default/default/template/fileuploader app/design/adminhtml/default/default/template/fileuploader
 app/design/frontend/base/default/layout/fileuploader.xml app/design/frontend/base/default/layout/fileuploader.xml
-app/design/frontend/base/default/template/fileuploader/ app/design/frontend/base/default/template/fileuploader/
-app/code/community/Uni/ app/code/community/Uni/
+app/design/frontend/base/default/template/fileuploader app/design/frontend/base/default/template/fileuploader
+app/code/community/Uni app/code/community/Uni
 app/etc/modules/Uni_Common.xml app/etc/modules/Uni_Common.xml
 app/etc/modules/Uni_Fileuploader.xml app/etc/modules/Uni_Fileuploader.xml
-js/fileuploader/ js/fileuploader/
-lib/Varien/Data/Form/Element/* lib/Varien/Data/Form/Element/
+js/fileuploader js/fileuploader
+lib/Varien/Data/Form/Element lib/Varien/Data/Form/Element
