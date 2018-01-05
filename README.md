@@ -17,6 +17,9 @@ Changelog
 
 See also changelog in [Release Notes tab](https://github.com/MaWoScha/Unicode_FileUploader/releases).
 
+0.2.7.2
+* Fix typo in 'Block/Adminhtml/Fileuploader/Grid.php' (only localization issue)
+
 0.2.7.1
 * "modman" and "composer.json" stuff (Thanks to [ConstantinCiot](https://github.com/ConstantinCiot) and [Altex-Romania](https://github.com/Altex-Romania))
 

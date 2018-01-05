@@ -51,7 +51,7 @@ class Uni_Fileuploader_Block_Adminhtml_Fileuploader_Grid extends Uni_Fileuploade
         ));
 
         $this->addColumn('content_disp', array(
-            'header' => Mage::helper('fileuploader')->__('Content-Disposiotion'),
+            'header' => Mage::helper('fileuploader')->__('Content-Disposition'),
             'align' => 'left',
             'width' => '80px',
             'index' => 'content_disp',

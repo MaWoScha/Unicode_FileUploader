@@ -12,7 +12,6 @@
         <Uni_Fileuploader>
             <active>true</active>
             <codePool>community</codePool>
-            <version>0.2.3</version>
         </Uni_Fileuploader>
     </modules>
 </config>
