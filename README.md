@@ -17,6 +17,10 @@ Changelog
 
 See also changelog in [Release Notes tab](https://github.com/MaWoScha/Unicode_FileUploader/releases).
 
+0.2.8
+* Add support for SUPEE-11155 and CE-1.9.4.2
+* change theme in 'Helper/Data.php' (Closing "span"-Tag)
+
 0.2.7.2
 * Fix typo in 'Block/Adminhtml/Fileuploader/Grid.php' (only localization issue)
 

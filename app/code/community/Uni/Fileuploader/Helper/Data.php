@@ -53,7 +53,7 @@ class Uni_Fileuploader_Helper_Data extends Mage_Core_Helper_Abstract {
         $mediaUrl = Mage::getBaseUrl('media');
         $ext = $this->getFileExtension($url, 1); //"jpg","jpeg","gif","png","txt","csv","htm","html","xml","css","doc","docx","xls","rtf","ppt","pdf","swf","flv","avi","wmv","mov","wav","mp3","zip"
         $mediaIcon = Mage::getBaseUrl('media') . 'custom/upload/icons/' . $ext . '.png';
-        $mediaIconImage = '<img src="' . $mediaIcon . '" alt="' . $ext . '" /></span>';
+        $mediaIconImage = '<img src="' . $mediaIcon . '" alt="' . $ext . '" />';
         $wh = ($showTitle) ? '16' : '22';
         if ($disposition) {
             if ($ext == 'jpg' || $ext == 'jpeg' || $ext == 'gif' || $ext == 'png' || $ext == 'bmp') {
