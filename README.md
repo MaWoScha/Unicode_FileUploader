@@ -9,7 +9,7 @@ Product Attachments extension provides uploading of multiple audio (QuickTime), 
 Compatibility
 -------------
 
-Compatible with Magento Version 1.9.3.x.
+Compatible with Magento Version 1.9.4.x.
 
 
 Changelog
