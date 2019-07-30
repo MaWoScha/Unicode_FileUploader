@@ -1,5 +1,5 @@
 <_>
-   <form_key></form_key>
+   <form_key>o1AcGcBSMrKZNCOg</form_key>
    <name>Unicode_FileUploader</name>
    <channel>community</channel>
    <version_ids>
@@ -10,7 +10,7 @@
    <description>Product Attachments extension provides uploading of multiple audio (QuickTime), video, pdf, and many other files and download or view these files on product page using content-disposition property. Supported extensions &quot;jpg&quot;, &quot;jpeg&quot;, &quot;gif&quot;, &quot;png&quot;, &quot;bmp&quot;, &quot;txt&quot;, &quot;csv&quot;, &quot;htm&quot;, &quot;html&quot;, &quot;xml&quot;, &quot;css&quot;, &quot;doc&quot;, &quot;docx&quot;, &quot;xls&quot;, &quot;rtf&quot;, &quot;ppt&quot;, &quot;pdf&quot;, &quot;swf&quot;, &quot;flv&quot;, &quot;avi&quot;, &quot;wmv&quot;, &quot;mov&quot;, &quot;wav&quot;, &quot;mp3&quot;, &quot;zip&quot; and many more.</description>
    <license>GPL</license>
    <license_uri>http://www.gnu.org/copyleft/gpl.html</license_uri>
-   <version>0.2.7</version>
+   <version>0.2.8</version>
    <stability>stable</stability>
    <notes>Original version from Unicode: 0.2.1
 
@@ -36,13 +36,16 @@ added:
 * locale/pt_PT/Uni_Fileuploader.csv
 
 Version 0.2.5
-* Updated Admin Routing to make this module compatible with Patch SUPEE-6788
+Updated Admin Routing to make this module compatible with Patch SUPEE-6788
 
 Version 0.2.6
-* Add function "_isAllowed()" to "app/code/community/Uni/Fileuploader/controllers/Adminhtml/FileuploaderController.php"
+Add function &quot;_isAllowed()&quot; to &quot;app/code/community/Uni/Fileuploader/controllers/Adminhtml/FileuploaderController.php&quot;
 
 Version 0.2.7
-* Enhance Template</notes>
+Enhance Template
+
+Version 0.2.8
+Add support for SUPEE-11155 and Magento v1.9.4.2</notes>
    <authors>
       <name>
          <name>Unicode Systems</name>
@@ -71,7 +74,7 @@ Version 0.2.7
             <max/>
          </max>
          <files>
-            <files/>
+            <files> </files>
          </files>
       </package>
       <extension>
