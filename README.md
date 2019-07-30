@@ -18,7 +18,7 @@ Changelog
 See also changelog in [Release Notes tab](https://github.com/MaWoScha/Unicode_FileUploader/releases).
 
 0.2.8
-* Add support for SUPEE-11155 and CE-1.9.4.2 (Thanks to [Aad Mathijssen](https://github.com/aadmathijssen)
+* Add support for SUPEE-11155 and CE-1.9.4.2 (Thanks to [Aad Mathijssen](https://github.com/aadmathijssen))
 * change theme in 'Helper/Data.php' (Closing "span"-Tag)
 * "modman" updated
 
