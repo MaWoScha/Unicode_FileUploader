@@ -1,5 +1,5 @@
 <_>
-   <form_key>o1AcGcBSMrKZNCOg</form_key>
+   <form_key></form_key>
    <name>Unicode_FileUploader</name>
    <channel>community</channel>
    <version_ids>
@@ -74,7 +74,7 @@ Add support for SUPEE-11155 and Magento v1.9.4.2</notes>
             <max/>
          </max>
          <files>
-            <files> </files>
+            <files/>
          </files>
       </package>
       <extension>
